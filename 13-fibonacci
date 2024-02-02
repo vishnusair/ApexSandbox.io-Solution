@@ -10,6 +10,7 @@ public Integer fibonacci(Integer n) {
     for(Integer i=3;i<=n;i++)
     {
         sum = sum + i;
+        sum=n;
     }
     return sum;
     }
