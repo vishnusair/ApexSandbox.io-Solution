@@ -1,0 +1,10 @@
+public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    //code here
+    if((a<b || a==b) && (b<c || b==c))  
+    {
+        return True;
+    }else
+    {
+        return False;
+    }
+}
