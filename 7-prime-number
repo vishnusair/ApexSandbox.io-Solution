@@ -4,10 +4,10 @@ public Boolean isPrime(Integer num) {
    {
        if(Math.mod(num,i)==0)
        {
-           return true;
+           return false;
        }
    }
-   return false;
+   return true;
 
 
 
