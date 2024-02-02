@@ -1,19 +1,20 @@
 public Integer fibonacci(Integer n) {
     //code here
-    Integer sum = 0;
-    Integer live = 1;
+    Integer temp = 0;
+    Integer last = 1;
+    Integer current = 1;
     if((n==1) || (n==2))
     {
         return 1;
     }
     else
     {
-    for(Integer i=3;i<=n;i++)
-    {
-        sum = live;
-        live = live + n;
-        n = sum;
-    }
-    return live;
+        for(Integer i=3;i<=n;i++)
+        {
+            temp = current;
+            current += last;
+            last = temp;
+        }
+    return current;
     }
 }
