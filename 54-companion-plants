@@ -6,7 +6,7 @@ public Boolean companionPlants(String plant1, String plant2) {
         'onions' => 'lettuce',
         'carrots' => 'onions',
         'tomatoes' => 'onions'
-    }
+    };
 
     if((nMap.get(plant1==plant2)) ||
         (nMap.get(plant2==plant1)))
