@@ -8,8 +8,8 @@ public Boolean companionPlants(String plant1, String plant2) {
         'tomatoes' => 'onions'
     };
 
-    if((nMap.get(plant1==plant2)) ||
-        (nMap.get(plant2==plant1)))
+    if((nMap.get(plant1)==plant)) ||
+        (nMap.get(plant2)==plant)))
         {
             return true;
         }
