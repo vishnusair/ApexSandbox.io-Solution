@@ -1,6 +1,7 @@
 public Integer fibonacci(Integer n) {
     //code here
     Integer sum = 0;
+    Integer live = 1;
     if((n==1) || (n==2))
     {
         return 1;
@@ -9,8 +10,9 @@ public Integer fibonacci(Integer n) {
     {
     for(Integer i=3;i<=n;i++)
     {
-        sum = sum + i;
-        sum=n;
+        sum = live;
+        live = live + n;
+        n = sum;
     }
     return sum;
     }
