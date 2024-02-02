@@ -14,6 +14,6 @@ public Integer fibonacci(Integer n) {
         live = live + n;
         n = sum;
     }
-    return sum;
+    return live;
     }
 }
