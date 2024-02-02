@@ -9,7 +9,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     };
 
     if((nMap.get(plant1)==plant2) ||
-        (nMap.get(plant2)==plant1))
+       (nMap.get(plant2)==plant1))
         {
             return true;
         }
