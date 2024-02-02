@@ -3,7 +3,7 @@ public Integer fibonacci(Integer n) {
     Integer sum = 0;
     if((n==1) || (n==2))
     {
-        return n;
+        return 1;
     }
     else
     {
