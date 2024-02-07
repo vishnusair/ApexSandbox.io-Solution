@@ -4,19 +4,14 @@ public String registerStudent(String name, String phone, String email) {
     acc.Name = name;
     acc.apxio__Phone__c = phone;
     acc.apxio__Email__c = email;
-    acc.apxio__Registration_Number__c = Id;
     Insert acc;
-    return acc.Id;
 
-
-
-
-
-
-
-
-
-
-
-
+    try{
+        apxio__Student__c abc = [Select apxio__Registration_Number__c, apxio__Email__c from apxio__Student__c];
+    return abc.apxio__Registration_Number__c;
+    }
+    catch(exception e)
+    {
+        return null;
+    }
 }
