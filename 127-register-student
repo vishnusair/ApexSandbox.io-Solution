@@ -4,8 +4,9 @@ public String registerStudent(String name, String phone, String email) {
     acc.Name = name;
     acc.apxio__Phone__c = phone;
     acc.apxio__Email__c = email;
+    acc.apxio__Registration_Number__c = Id;
     Insert acc;
-    return acc.apxio__Registration_Number__c;
+    return acc.Id;
 
 
 
