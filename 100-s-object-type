@@ -3,7 +3,7 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Object o = record;
     Boolean result = o instanceof Account;
-    return o;
+    return result;
 
 
 }
