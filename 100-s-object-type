@@ -1,8 +1,9 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    return instanceof(record);
-
+    Object o = record;
+    Boolean result = o instanceof Account;
+    return o;
 
 
 }
