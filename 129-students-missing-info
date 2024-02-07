@@ -1,5 +1,5 @@
 public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
     // code here
-    list<apxio__Student__c> apxc = [Select Id, Name, apxio__Active__c, apxio__Email__c,apxio__Phone__c, apxio__Registration_Number__c where apxio__Active__c=true AND apxio__Email__c=Null OR apxio__Phone__c=Null order by Name];
+    list<apxio__Student__c> apxc = [Select Id, Name, apxio__Active__c, apxio__Email__c,apxio__Phone__c, apxio__Registration_Number__c where apxio__Active__c=true AND apxio__Email__c=Null order by Name];
     return apxc;
 }
