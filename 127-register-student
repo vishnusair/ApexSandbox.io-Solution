@@ -7,8 +7,8 @@ public String registerStudent(String name, String phone, String email) {
     Insert acc;
 
     try{
-        apxio__Student__c abc = [Select apxio__Registration_Number__c, apxio__Email__c from apxio__Student__c];
-    return abc.apxio__Registration_Number__c;
+        apxio__Student__c abc = [Select Id, apxio__Registration_Number__c, apxio__Email__c from apxio__Student__c];
+        return abc.apxio__Registration_Number__c;
     }
     catch(exception e)
     {
