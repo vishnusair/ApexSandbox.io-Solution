@@ -8,7 +8,7 @@ public String registerStudent(String name, String phone, String email) {
 
     try{
         apxio__Student__c abc = [Select Id, apxio__Registration_Number__c, apxio__Email__c from apxio__Student__c limit 1 ];
-        return abc.Id;
+        return abc.apxio__Registration_Number__c;
     }
     catch(exception e)
     {
