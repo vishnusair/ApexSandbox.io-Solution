@@ -3,16 +3,13 @@ public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c cc = new apxio__Course__c();
     cc.Name = name;
     cc.apxio__Course_Details__c = details;
-    list<apxio__Credits__c> abc = new list{1,2,3,4};
-        if(cc.apxio__Credits__c.contains(abc))
-        {
-            return cc.apxio__Credits__c = credits;
-        }
-        else
-        {
-            return null;
-        }
-    insert cc;
+    cc.apxio__Credits__c = String.valueOf(credits);
+    try{
+        insert cc;
+    }
+    catch(exception e)
+    {
+        return null;
+    }
     return cc.Id;
-
 }
