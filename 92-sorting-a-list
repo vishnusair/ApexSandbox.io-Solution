@@ -1,12 +1,6 @@
 public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     //code here
-   try
-   {
-       return accountNames.sort();
-   }
-   catch(exception e)
-   {
-       return null;
-   }
-}
+   return accountNames ?.sort();
+
+}   
