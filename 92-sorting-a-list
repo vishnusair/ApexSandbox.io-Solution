@@ -3,7 +3,7 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     //code here
    try
    {
-       return getNamesInAscOrder(accountNames);
+       return accountNames.sort();
    }
    catch(exception e)
    {
