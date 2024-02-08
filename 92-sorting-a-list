@@ -3,9 +3,8 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     //code here
 
 
-    List<String> sortedList = new List<String>();
-    sortedList  = accountNames.sort();
-    return accountNames;
+    List<String> sortedList = accountNames.sort();
+    return sortedList;
    //accountNames ?.sort();
    //return accountNames;
 
