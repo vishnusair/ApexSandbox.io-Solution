@@ -1,10 +1,10 @@
 public Boolean sameParent(Account acc, Contact con, Opportunity opp) {
     //code here
-    if(acc.AccountId == null || con.AccountId== null || opp.AccountId==null)
+    if(acc.Id == null || con.AccountId== null || opp.AccountId==null)
     {
         return false;
     }
-    if(acc.AccountId == con.AccountId && acc.AccountId == opp.AccountId)
+    if(acc.Id == con.AccountId && acc.Id == opp.AccountId)
     {
         return true;
     }
