@@ -8,6 +8,6 @@ public Decimal average(List<Decimal> numbers){
        sum = sum + numbers[i];
     }
     sum2 = sum / a;
-    return roundOff(sum2,2);
+    return Math.round(sum2,2);
 })
 
