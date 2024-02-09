@@ -6,6 +6,6 @@ public Decimal average(List<Decimal> numbers){
     {
         sum = sum[i]/i;
     }
-    return setScale(sum,2);
+    return sum;
 }
 
