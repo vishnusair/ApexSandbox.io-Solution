@@ -1,9 +1,9 @@
 public List<Integer> evenNumbers(Integer n) {
     //code here
-    Integer sum = 0;
-    for(Integer i=2; i<n*2; i++)
+    list<Integer> acclist = new list<Integer>();
+    for(Integer i=2; i<n*2; i+2)
     {
-        sum = sum + a;
+        acclist.add(i);
     }
-    
+    return acclist;
 }
