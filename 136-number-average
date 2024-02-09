@@ -9,5 +9,5 @@ public Decimal average(List<Decimal> numbers){
     }
     sum2 = sum / a;
     return Math.round(sum2,2);
-})
+}
 
