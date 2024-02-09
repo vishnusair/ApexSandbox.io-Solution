@@ -3,15 +3,15 @@ public void setAccountRating(Account a) {
    
         if(a.AnnualRevenue>=500000)
         {
-            a.Rating == 'Hot';
+            a.Rating = 'Hot';
         }
         else if(a.AnnualRevenue>=100000 && a.AnnualRevenue<=500000)
         {
-            a.Rating == 'Warm';
+            a.Rating = 'Warm';
         }
         else
         {
-            a.Rating == 'Cold';
+            a.Rating = 'Cold';
         }
     
 }
