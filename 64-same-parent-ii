@@ -4,7 +4,7 @@ public Boolean sameParent(Account acc, Contact con, Opportunity opp) {
     {
         return false;
     }
-    else if(acc.AccountId == con.AccountId == opp)
+    else if(acc.Id == con.Id == opp.Id)
     {
         return true;
     }
