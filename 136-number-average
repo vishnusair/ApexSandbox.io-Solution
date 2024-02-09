@@ -4,8 +4,7 @@ public Decimal average(List<Decimal> numbers){
     decimal sum = 0;
     for(Integer i=0;i<a; i++)
     {
-       sum = sum + numbers[i];
-       sum = sum/a;
+       sum = (sum + numbers[i])/a;
     }
     return sum;
 }
