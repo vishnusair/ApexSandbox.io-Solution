@@ -1,8 +1,8 @@
 public Decimal average(List<Decimal> numbers){
     // your code here
-    integer a = numbers.size();
+    Integer a = numbers.size();
     decimal sum = 0;
-    for(i=1;i<=a; i++)
+    for(Integer i=1;i<=a; i++)
     {
         sum = sum[i]/i;
     }
