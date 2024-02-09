@@ -1,7 +1,7 @@
 public void setAccountRating(Account a) {
     //code here
    
-        if(a.AnnualRevenue>=500000)
+        if(a.AnnualRevenue>500000)
         {
             a.Rating = 'Hot';
         }
