@@ -4,14 +4,8 @@ public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
     for(Integer i=0;i<firstNames.size();i++)
     {
         fullNames.add(firstNames);
-    }
-    for(Integer i=0;i<lastNames.size();i++)
-    {
         fullNames.add(lastNames);
     }
     return fullNames(firstNames,lastNames);
-
-
-
 }
 
