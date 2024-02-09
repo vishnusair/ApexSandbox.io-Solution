@@ -1,6 +1,6 @@
 public Boolean sameParent(Contact c, Opportunity opp) {
     //code here
-    if(c.AccoutId == opp.AccoutId)
+    if(c.AccountId == opp.AccountId)
     {
         return true;
     }
