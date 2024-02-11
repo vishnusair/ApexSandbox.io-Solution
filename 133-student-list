@@ -3,9 +3,10 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     List<apxio__Student__c> st = new List<apxio__Student__c>();
     for(Integer i: st)
     {
-        st.apxio__Student__c = studentNames[i];
-        st.apxio__Student__c.apxio__Email__c = studentEmails[i];
-        st.add(i);
+        apxio__Student__c student = new apxio__Student__c();
+        student.name = studentNames[i];
+        student.apxio__Email__c = studentEmails[i];
+        st.add(student);
     }
     insert st;
 }
