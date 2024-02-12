@@ -2,7 +2,7 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
     for(Account acc: accounts)
     {
-        return acc ?.toUpperCase();
+        return acc[0]?.toUpperCase();
     }
     
 
