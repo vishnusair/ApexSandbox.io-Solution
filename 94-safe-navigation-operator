@@ -1,11 +1,7 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-    List<Account> accounts = [Select BillingCity from Account limit 1];
-    for(Account acc: accounts)
-    {
-        return acc?.toUpperCase();
-    }
-    
+    String billingCity = accounts[0].BillingCity?.toUpperCase();
+    return billingCity;
 
 
 }
