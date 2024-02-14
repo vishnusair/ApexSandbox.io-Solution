@@ -1,8 +1,13 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {
     // code here
-    if(accounts.?size() == null && contacts.?size()== null)
+    List<Account> accounts2 = new List<Account>();
+    accounts2.addAll(accounts);
+    List<Contact> contacts2 = new List<Contact>();
+    contacts2.addAll(contacts);
+    List<sObject> s1 = new List<sObject>();
+    if(accounts2.?size() == null && contacts2.?size()== null)
     {
-        return '';
+        return s1;
     }
 }
