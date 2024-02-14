@@ -2,14 +2,14 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {
     // code here
     List<sObject> s1 = new List<sObject>();
-    if(accounts.Size() != null)
+    if(accounts != null)
     {
         for(Account acc: accounts)
         {
             s1.add(acc);
         }
     }
-    if(contacts.Size() != null)
+    if(contacts != null)
     {
         for(Contact con: contacts)
         {
