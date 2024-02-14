@@ -7,6 +7,10 @@ public void linkParent(Case c1, Case c2) {
             c2.ParentId = c1.ParentId;
         }
     }
+    else
+    {
+        
+    }
 
 
 
