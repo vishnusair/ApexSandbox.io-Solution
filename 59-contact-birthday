@@ -3,9 +3,10 @@ public Boolean isBirthday(Contact c) {
     Date a = System.today();
     if(c.Birthdate.Month() == a.Month())
     {
+        if(c.Birthdate.Day() == a.Day())
+        {
         return true;
+        }
     }
     return false;
-
-
 }
