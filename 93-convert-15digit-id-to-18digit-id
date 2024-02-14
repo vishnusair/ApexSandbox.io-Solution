@@ -1,15 +1,9 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
     //code here
-
-    if(fifteenDigit?.length()==15)
+    if(fifteenDigit?.Length()==15)
     {
         return Id(fifteenDigit);
     }
-
     return '-1';
-
-
-
-
 }
