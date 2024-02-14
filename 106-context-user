@@ -1,9 +1,9 @@
 public Map<String,String> getContextUserInformation(){
     //code here
-    return new Map<String,String>{
-        'UserName' => UserInfo.getUserName();
-        'ProfileId' => UserInfo.getProfileId();
-        'Type' => UserInfo.getType();
-        'EmailId' => UserInfo.getEmailId();
+    return new Map<String,String> {
+        'UserName' => UserInfo.getUserName(),
+        'ProfileId' => UserInfo.getProfileId(),
+        'Type' => UserInfo.getType(),
+        'EmailId' => UserInfo.getEmailId()
     };
 }
