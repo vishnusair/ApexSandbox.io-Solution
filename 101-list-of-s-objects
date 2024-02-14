@@ -2,7 +2,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {
     // code here
     List<sObject> s1 = new List<sObject>();
-    if((accounts?.Size() == null) || (contacts?.Size() == null))
+    if((accounts?.Size() == null) && (contacts?.Size() == null))
     {
         s1.Clear();
         return s1;
