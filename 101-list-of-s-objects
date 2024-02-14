@@ -2,10 +2,19 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {
     // code here
     List<sObject> s1 = new List<sObject>();
-    if((accounts.Size() != null) && (contacts.Size() != null))
+    if(accounts.Size() != null)
     {
-        s1.Add(accounts);
-        s1.Add(contacts);
+        for(Account acc: accounts)
+        {
+            s1.add(acc);
+        }
+    }
+    if(contacts.Size() != null)
+    {
+        for(Contact con: contacts)
+        {
+            s1.add(con);
+        }
     }
     return s1;
 }
