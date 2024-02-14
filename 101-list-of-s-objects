@@ -6,4 +6,5 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     {
         return s1;
     }
+    return s1;
 }
