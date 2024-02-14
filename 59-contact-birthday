@@ -1,7 +1,6 @@
 public Boolean isBirthday(Contact c) {
     //code here
-    Date a = new Date();
-    a = System.today();
+    Date a = System.today();
     if(c.Birthdate.Month().Day() == a.Month().Day())
     {
         return true;
