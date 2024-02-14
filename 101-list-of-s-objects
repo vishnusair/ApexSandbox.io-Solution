@@ -5,6 +5,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     if((accounts?.Size() == null) && (contacts?.Size() == null))
     {
         s1.Clear();
+        return s1;
     }
     s1.Add(accounts);
     s1.Add(contacts);
