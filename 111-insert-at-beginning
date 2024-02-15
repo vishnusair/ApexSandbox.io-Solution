@@ -1,4 +1,8 @@
 public void insertAtStart(String cityName, List<String> cities) {
     //code here
-   return cities.set(0,cityName);
+   for(String city: cities[0])
+   {
+       cities.set(0,city);
+   }
+   cities.add(cityName);
 }
