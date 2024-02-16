@@ -10,8 +10,12 @@ public Boolean containsDuplicates(List<Integer> nums) {
             {
                 return true;
             }
-        }
-        return false;
+            else
+            {
+                return false;
+            }
 
+        }
     }
+    return false;
 }
