@@ -6,6 +6,7 @@ public Decimal average(List<Decimal> numbers){
     {
        sum = sum + numbers[i];
     }
-    return (sum/a).setScale(2, RoundingMode.HALF_UP);
+    decimal sum2 = sum/a;
+    return sum2.setScale(2, System.RoundingMode.HALF_EVEN);
 }
 
