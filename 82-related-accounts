@@ -2,5 +2,5 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
     Set<Id> set1 = new Set<Id>(opps);
     set1 = [Select Name, AccountId from Opportunity];
-    return set1;
+    return set1(Id);
 }
