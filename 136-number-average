@@ -2,12 +2,10 @@ public Decimal average(List<Decimal> numbers){
     // your code here
     Integer a = numbers.size();
     decimal sum = 0;
-    decimal sum2 = 0;
     for(Integer i=0;i<a;i++)
     {
-       sum = sum + numbers[i];
+       sum = (sum + numbers[i]) / a;
     }
-    sum2 = sum / a;
-    return setScale(sum2,2);
+    return sum;
 }
 
