@@ -1,0 +1,6 @@
+public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
+    //code here
+    set<Integer> set1 = new set<Integer>(nums1);
+    set<Integer> set2 = new set<Integer>(nums2);
+    return set1.size() != set2.size();
+}
