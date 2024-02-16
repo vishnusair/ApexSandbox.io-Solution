@@ -10,11 +10,6 @@ public Boolean containsDuplicates(List<Integer> nums) {
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
-        return false;
         }
     }
 }
