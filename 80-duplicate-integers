@@ -12,4 +12,5 @@ public Boolean containsDuplicates(List<Integer> nums) {
             }
         }
     }
+    return false;
 }
