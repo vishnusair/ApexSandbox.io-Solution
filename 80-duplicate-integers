@@ -1,0 +1,19 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    //code here
+    Integer c = 0;
+    For(Integer a: nums)
+    {
+        if(nums.contains(a))
+        {
+            c++;
+            if(c>1)
+            {
+                return true;
+            }
+        }
+
+    }
+    return false;
+
+
+}
