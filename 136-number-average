@@ -6,6 +6,6 @@ public Decimal average(List<Decimal> numbers){
     {
        sum = sum + numbers[i];
     }
-    return sum/a;
+    return (sum/a).setScale(4, RoundingMode.HALF_UP);
 }
 
