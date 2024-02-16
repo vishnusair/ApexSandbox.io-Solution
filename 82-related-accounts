@@ -1,12 +1,12 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
     Set<Id> set1 = new Set<Id>();
-    opps  = [Select Name, Id, AccountId from Opportunity];
+    //opps  = [Select Name, Id, AccountId from Opportunity];
     for(Opportunity opp: opps)
     {
-        if(opp.Id == opp.AccountId)
+        if(opp.AccountId != Null)
         {
-            set1.add(AccountId);
+            set1.add(opp.AccountId);
         }
     }
     return set1;
