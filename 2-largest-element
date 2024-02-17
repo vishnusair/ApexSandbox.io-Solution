@@ -1,4 +1,4 @@
 public static Integer findLargest(List<Integer> nums) {
 	//code here
-   return max(nums);
+   return Math.max(nums);
 }
