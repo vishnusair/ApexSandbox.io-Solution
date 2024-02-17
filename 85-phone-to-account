@@ -5,7 +5,7 @@ public Map<String, Account> phoneToAccount(List<Account> accounts) {
     {
         if(acc.phone != null)
         {
-            nMap.put(acc.phone, acc.Id);
+            nMap.put(acc.phone, acc);
         }
     }
     return nMap;
