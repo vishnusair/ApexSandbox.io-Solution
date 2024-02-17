@@ -1,7 +1,6 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
   numbers.sort();
-  numbers.reverse();
   Integer a = numbers[1];
   return a;
 }
