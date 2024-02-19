@@ -1,17 +1,17 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    Integer a = numbers.size();
-      If(a<=2)
-      {
-          return true;
-      }  
-    for(Integer i=0;i<a-1;i++)
+    if(numbers.size()<=2)
     {
-      else
-      {
-          numbers.sort();
-          return true;
-      }
+        return true;
     }
-    return false;
-}
+    for(Integer i=1;i<numbers.size()-1;i++)
+    {
+         if (!(numbers[i-1]<=numbers[i] && numbers[i]<=numbers[i+1] || numbers[i-1]>=numbers[i] && numbers[i]>=numbers[i+1] )){
+            return False;
+        }
+    }
+    
+    return True;
+}        
+    }
+    
