@@ -7,7 +7,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     {
           if(c.Type != null)
           {
-              if(nMap1.containsKey(c.Type)
+              if(nMap1.containsKey(c.Type))
               {
                   nMap1.get(c.Type).add(c);
               }
