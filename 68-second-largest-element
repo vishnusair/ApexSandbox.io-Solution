@@ -1,6 +1,15 @@
 public Integer secondLargest(List<Integer> numbers) {
     //code here
-  numbers.sort();
-  Integer a = numbers[1];
-  return a;
-}
+   Integer largestseen =  -2147483647 - 1;
+   Integer secondlargestseen =  -2147483647 - 1;
+   for(Integer i=0;i<numbers.size();i++){
+        if(numbers[i]>largestseen){
+            secondlargestseen = largestseen;
+            largestseen = numbers[i];
+        }
+        else if(numbers[i]>secondlargestseen && numbers[i]<largestseen){
+            secondlargestseen = numbers[i];
+        }
+    }
+    return secondlargestseen;
+}        
