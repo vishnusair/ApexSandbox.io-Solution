@@ -4,7 +4,7 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     String val = '';
     for(Integer i=0;i<adjectives.size();i++)
     {
-        for(Integer j=0;j<i;j++)
+        for(Integer j=0;j<animals.size();j++)
         {
             val = adjectives[i] + '-' + animals[j];
             result.add(val);
