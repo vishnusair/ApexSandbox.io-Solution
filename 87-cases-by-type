@@ -3,7 +3,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> nMap1 = new Map<String, List<Case>>();
     //String myCase = new String();
     //List<Case> list1 = new List<Case>();
-    For(Case c: cases)
+    For(Case c : cases)
     {
           if(c.Type != null)
           {
