@@ -11,7 +11,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             }
             else
             {
-                nMap.put(acc.Industry, d1);
+                nMap.put(acc.Industry, acc.AnnualRevenue);
             }
     }
     return nMap;
