@@ -11,7 +11,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
                 }
               else
                 {
-                  nMap1.put(c.Type, new List { c });
+                  nMap1.put(c.Type, new List<Case> { c });
                 }
             }
     }
