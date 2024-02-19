@@ -1,7 +1,7 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     //code here
     Map<String,Decimal> nMap = new Map<String,Decimal>();
-    Decimal d1 = 0.0;
+    Decimal d1;
     for(Account acc : accounts)
     {
         if(acc.Industry != null)
