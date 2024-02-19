@@ -12,6 +12,4 @@ public boolean isSorted(List<Integer> numbers) {
     }
     
     return True;
-}        
-    }
-    
+    }         
