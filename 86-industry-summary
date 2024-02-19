@@ -4,19 +4,15 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Decimal d1;
     for(Account acc : accounts)
     {
-        if(acc.Industry != null)
-        {
             if(nMap.containsKey(acc.Industry))
             {
-                d1 += acc.AnnualRevenue;
-                nMap.get(acc.Industry).add(d1);
+                d1 = nMap.get(acc.Industry) + acc.AnnualRevenue;
+                nMap.put(acc.Industry, d1);
             }
             else
             {
-                d1 += acc.AnnualRevenue;
-                nMap.put(acc.Industry).add(d1);
+                nMap.put(acc.Industry, d1);
             }
-        }
     }
     return nMap;
 }
