@@ -13,11 +13,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
               }
               else
               {
-                  nMap1.put(c.Type, new List {c});
+                  nMap1.put(c.Type, new List { c });
               }
           }
-        //myMap.put(myCase.Type, new List { myCase })
-       // myMap.get(myCase.Type).add(myCase).
     }
     return nMap1;
 }
