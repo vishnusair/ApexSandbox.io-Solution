@@ -4,11 +4,11 @@ public List<Integer> fibonacciSeries(Integer n) {
     {
         return List<Integer> {1};
     }
-    List<Integer> fib = new List<Integer> {1,1};
+    List<Integer> fib = new List<Integer>{1,1};
     Integer value = 1;
     for(Integer i=2;i<n;i++)
     {
-        value = value + fib[i-2];
+        value += fib[i-2];
         fib.add(value);
     }
     return fib;
