@@ -1,7 +1,7 @@
 public List<Integer> positiveIntegers(List<Integer> numbers) {
     //code here
     List<Integer> l1 = new List<Integer>();
-    for(Integer i=0; i<=numbers.size();i++)
+    for(Integer i: numbers)
     {
         if(i>0)
         {
